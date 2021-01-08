@@ -76,6 +76,12 @@ p{
    color: var(--color--black);
    margin: 0.325rem 0;
 }
+.section{
+    padding: 2rem;
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
 /*Navbar*/
 #navbar{
     background-color: var(--color--navy);
@@ -109,8 +115,6 @@ p{
     display: flex;
     position: relative;
     right: 10rem;
-    
- 
 
 }
 
@@ -128,4 +132,42 @@ p{
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 3rem;
+}
+
+/* Content */
+#content{
+   padding: 2rem;
+   text-align: center;
+   background: url("../img/backimg.png") center/cover no-repeat ; 
+  
+}
+.content__container{
+    
+    margin: 2rem 0;
+  
+}
+#content .title{
+    color: var(--color--dark--white);
+}
+#content .subtitle{
+    color: var(--color--dark--white);
+}
+.content__play__button{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    font-size: 4rem;    
+   margin-bottom: 0.5rem;
+}
+.content__bolume{
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+ 
+}
+.content__play button{
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 40%;
 }
