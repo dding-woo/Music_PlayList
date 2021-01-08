@@ -54,6 +54,7 @@ ul {
 }   
 a{
     text-decoration: none;  
+    color: var(--color--white);
 }                                                                                     
 
 
@@ -71,8 +72,60 @@ h2{
     margin: 0.5rem 0;
 }
 p{
-   font-size: var(--font--size--medium);
+   font-size: var(--font--size--medium);    
    color: var(--color--black);
    margin: 0.325rem 0;
 }
+/*Navbar*/
+#navbar{
+    background-color: var(--color--navy);
+    color: var(--color--white);
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+   
+    
+}
+#navbar .navbar__logo{
+    position: relative;
+    top: -1rem;
+}
+.navbar__logo a{
+    font-weight: var(--font--bold);
+    font-size: 2rem;
+}
+.navbar__logo{
+    margin-left: 2rem;
+}
+.logo{
+    position: relative;
+    top: 1.3rem;
+    width: 4rem;
+    height: 4rem;
+}
 
+.navbar__menu__item{
+    display: flex;
+    position: relative;
+    right: 10rem;
+    
+ 
+
+}
+
+.navbar__menu__item .menu__item__list{
+    font-weight: var(--font--bold);           
+    font-size: var(--font--size--medium);
+    cursor: pointer;
+    margin: 0.5rem 0.5rem;
+    padding:0.5rem 0.5rem;
+   
+} 
+.navbar__sns i{
+    position: relative;
+    top: -0.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
