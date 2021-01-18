@@ -154,10 +154,11 @@ p{
     margin: 2rem 0;
   
 }
-#content .title{
+ .title{
     color: var(--color--dark--white);
+    
 }
-#content .subtitle{
+.subtitle{
     color: var(--color--dark--white);
 }
 .content__play__button{
@@ -188,11 +189,7 @@ p{
 
    
 }
-.music__genre{
-    display: flex;
-    justify-content: center;
-   
-}
+
 
 .genre__btn{
     font-size: 2rem;
@@ -205,34 +202,56 @@ p{
    
     
 }
-.genre__container .title,
-.genre__container .subtitle,
+
+.genre__container .genre__title,
+.genre__container .genre__subtitle,
 .genre__nation{
     text-align: center;
+    color: var(--color--black);
 }
-.genre__youtube--icon{
-    color: var(--color--red);
-}   
 
 .music__genre{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     transition: all var(--animation--duration) ease-in;
-    justify-content:center; 
     margin: 1rem;
-    
+   
 }
 
 .music{
     margin: 1rem;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    position: relative;
-    cursor: pointer;
+
+   
+    
+   
+}
+.music img{
+    border-radius:10%; 
 }
 .genre__description{
+    display: flex;   /*바로 아래 자식에게만 적용 자식의 자식에게는 적용 안됨 까먹지 말자. */
+    position: relative;
+    right: 0.56rem;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
+    font-weight: var(--font--bold);
+    font-size: var(--font--size--regular);
+   
 }
+.genre__youtube--icon{
+    color: var(--color--red);
+
+}  
+ 
+.genre__description .genre__youtube--icon,span{
+    position: relative;
+    left: 20px;
+}
+
 .music__genre .music,
 .genre__description{
 
@@ -243,5 +262,26 @@ p{
     transform: scale(1.1);
     transition: all var(--animation--duration) ease-in;
     opacity: 1;
-    
+   
 }
+/*contact*/
+
+#contact{
+    background-color: var(--color--navy);
+}
+.contact__email{
+    color:var(--color--dark--white);
+}
+.contact__logo{
+    display: flex;
+   position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.contact__logo a{
+    margin: 0 0.5rem;
+}
+.contact__github{
+    font-size:2rem
+}
+
